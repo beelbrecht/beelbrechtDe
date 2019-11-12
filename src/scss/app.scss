@@ -1,0 +1,11 @@
+
+@import "custom";
+
+@import "bootstrap/scss/bootstrap";
+
+@import "@material/elevation/mdc-elevation";
+
+.card {
+  border: 0;
+  @include mdc-elevation(1);
+}

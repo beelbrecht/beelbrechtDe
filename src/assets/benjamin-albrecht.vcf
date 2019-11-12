@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Albrecht;Benjamin;;;
+FN: Benjamin Albrecht
+EMAIL;type=INTERNET;type=HOME;type=pref:benjamin.albrecht@beelbrecht.de
+TEL;type=CELL;type=VOICE;type=pref:+491792110876
+ADR;type=HOME:;;Gemsenstr. 37;Kaarst;;41564;Deutschland
+URL;type=HOME;type=pref:https://beelbrecht.de
+END:VCARD
