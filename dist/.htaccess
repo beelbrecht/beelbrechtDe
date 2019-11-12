@@ -125,9 +125,9 @@ Options -MultiViews
 # https://blogs.msdn.microsoft.com/ie/2014/04/02/stay-up-to-date-with-enterprise-mode-for-internet-explorer-11/
 # https://msdn.microsoft.com/en-us/library/ff955275.aspx
 
-<IfModule mod_headers.c>
-    Header set X-UA-Compatible "IE=edge" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
-</IfModule>
+# <IfModule mod_headers.c>
+#     Header set X-UA-Compatible "IE=edge" "expr=%{CONTENT_TYPE} =~ m#text/html#i"
+# </IfModule>
 
 # ######################################################################
 # # MEDIA TYPES AND CHARACTER ENCODINGS                                #
@@ -315,9 +315,9 @@ AddDefaultCharset utf-8
     # RewriteOptions <options>
 
     # (6)
-    RewriteCond %{HTTPS} =on
+    RewriteCond %{ENV:HTTPS} =on
     RewriteRule ^ - [env=proto:https]
-    RewriteCond %{HTTPS} !=on
+    RewriteCond %{ENV:HTTPS} !=on
     RewriteRule ^ - [env=proto:http]
 
 </IfModule>
